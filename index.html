@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HOLGER — Fotografía Artística</title>
+  <meta name="description" content="HOLGER — Blog y portafolio de fotografía. Estilo editorial, blanco, minimal, lujo silencioso." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">HOLGER</a>
+    <nav class="nav">
+      <a href="./blog.html">Blog</a>
+      <a href="#pricing">Precios</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__bg" style="background-image:url('./assets/img/hero.jpg')"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__inner">
+        <h1 class="hero__title">HOLGER</h1>
+        <p class="hero__subtitle">Fotografía artística · Bodas · Eventos privados</p>
+        <p class="hero__quote">“La fotografía no se explica. Se contempla.”</p>
+
+        <div class="hero__cta">
+          <a class="btn" href="./blog.html">Ver blog</a>
+          <a class="btn btn--ghost" href="#contact">Consultar disponibilidad</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <p class="manifesto">
+        Creo imágenes que resisten el paso del tiempo: luz natural, calma y emoción real.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2 class="section__title">Últimas historias</h2>
+        <p class="section__desc">Editorial · Arte · Consejos</p>
+      </div>
+
+      <div id="latestPosts" class="grid"></div>
+
+      <div class="center mt">
+        <a class="btn btn--ghost" href="./blog.html">Ver todo el blog</a>
+      </div>
+    </section>
+
+    <section id="pricing" class="section section--alt">
+      <div class="section__head">
+        <h2 class="section__title">Precios</h2>
+        <p class="section__desc">Packs accesibles con entrega premium.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Bodas</h3>
+          <div class="price">Desde 950 €</div>
+          <p>Edición fine art<br>Galería privada<br>Descarga HD</p>
+        </article>
+
+        <article class="card">
+          <h3>Bautizos</h3>
+          <div class="price">Desde 180 €</div>
+          <p>2 horas<br>Selección cuidada<br>Galería online</p>
+        </article>
+
+        <article class="card">
+          <h3>Eventos privados</h3>
+          <div class="price">Desde 150 €</div>
+          <p>Fotografía + vídeo<br>Entrega digital</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__head">
+        <h2 class="section__title">Contacto</h2>
+        <p class="section__desc">Cuéntame tu evento y te respondo personalmente.</p>
+      </div>
+
+      <!-- Sin depender de empresas: esto por defecto abre tu email -->
+      <div class="center">
+        <a class="btn" href="mailto:contact@holgerstudio.com?subject=Reserva%20-%20HOLGER%20STUDIO">Escribirme por email</a>
+      </div>
+
+      <p class="fine center mt">
+        contact@holgerstudio.com
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> HOLGER STUDIO</div>
+      <div><a href="mailto:contact@holgerstudio.com">contact@holgerstudio.com</a></div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/posts.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
