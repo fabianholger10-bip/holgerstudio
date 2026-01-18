@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Post — HOLGER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">HOLGER</a>
+    <nav class="nav">
+      <a href="./blog.html">Blog</a>
+      <a href="./index.html#pricing">Precios</a>
+      <a href="./index.html#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <article class="post">
+      <div class="post__hero" id="postHero"></div>
+
+      <header class="post__header">
+        <p class="post__meta" id="postMeta"></p>
+        <h1 class="post__title" id="postTitle"></h1>
+        <p class="post__excerpt" id="postExcerpt"></p>
+      </header>
+
+      <section class="post__content" id="postContent"></section>
+
+      <div class="center mt">
+        <a class="btn btn--ghost" href="./blog.html">Volver al blog</a>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> HOLGER STUDIO</div>
+      <div><a href="mailto:contact@holgerstudio.com">contact@holgerstudio.com</a></div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/posts.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>

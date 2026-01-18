@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — HOLGER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">HOLGER</a>
+    <nav class="nav">
+      <a href="./blog.html" aria-current="page">Blog</a>
+      <a href="./index.html#pricing">Precios</a>
+      <a href="./index.html#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section">
+      <div class="section__head">
+        <h1 class="section__title">Blog</h1>
+        <p class="section__desc">Historias reales tratadas como piezas de arte.</p>
+      </div>
+
+      <div class="filters">
+        <input id="search" class="search" placeholder="Buscar…" />
+        <select id="tag" class="select">
+          <option value="">Todas</option>
+          <option value="Editorial">Editorial</option>
+          <option value="Arte">Arte</option>
+          <option value="Consejos">Consejos</option>
+        </select>
+      </div>
+
+      <div id="postsGrid" class="grid"></div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> HOLGER STUDIO</div>
+      <div><a href="mailto:contact@holgerstudio.com">contact@holgerstudio.com</a></div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/posts.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+</html>
